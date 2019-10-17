@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
-using namespace  std;
 #define ll long long
+using namespace  std;
 int main(){
 int t;
 cin>>t;
@@ -13,11 +13,7 @@ while(t--){
         cin>>a[i][j];
      sort(a[i],a[i]+N);
     }
-/*for(i=0;i<N;i++){
-    if(a[i][N-1]<N-i-1)
-        ans=-1;
-}
-if(ans!=-1)*/
+
     for(i=N-1;i>=0;i--){
     if(i==N-1){sum=a[N-1][N-1];ans=sum;}
     else if(i<N-1 && ans>=0){
